@@ -1,7 +1,6 @@
 package actividadPizzeria;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Ejercicio1 {
 	public static void main(String[] args) {
@@ -16,14 +15,12 @@ public class Ejercicio1 {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	private static void registrarPedidos(int idTienda1, int idTienda2, int idTienda3, ClienteServicio cs) throws IOException {
 		registarEnTienda1(idTienda1, cs);
 		registarEnTienda2(idTienda2, cs);
 		registarEnTienda3(idTienda3, cs);
-
 	}
 
 	private static void registarEnTienda3(int idTienda3, ClienteServicio cs) throws IOException {
@@ -59,5 +56,4 @@ public class Ejercicio1 {
 
 		cs.anadirProducto(idTienda1, pedido2, "MARGARITA");
 	}
-
 }
